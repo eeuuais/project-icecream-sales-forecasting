@@ -50,7 +50,7 @@
 ```
 project-icecream-sales-forecasting/
 ├── 01_Data/
-│   ├── raw/                         # 원본 데이터 (결제 로그, 메뉴 목록, 가격 인상표, 집계 파일)
+│   ├── raw/                         # 원본 데이터 (결제 로그, 메뉴 목록, 가격 인상표, 집계 파일, 수원 일별 기상 데이터)
 │   └── expanded_icecream.csv        # 판매수량만큼 행을 복제한 파생 파일 (초기 버전 노트북용)
 ├── 02_Notebooks/
 │   ├── 01_EDA_Preprocessing.ipynb   # 데이터 구조 확인, 전처리, 기초 탐색
