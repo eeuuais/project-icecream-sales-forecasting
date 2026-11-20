@@ -50,7 +50,8 @@
 ```
 project-icecream-sales-forecasting/
 ├── 01_Data/
-│   └── anonymized/                  # 카드번호/승인번호를 가명 처리한 데이터
+│   ├── raw/                         # 원본 데이터 (결제 로그, 메뉴 목록, 가격 인상표, 집계 파일)
+│   └── expanded_icecream.csv        # 판매수량만큼 행을 복제한 파생 파일 (초기 버전 노트북용)
 ├── 02_Notebooks/
 │   ├── 01_EDA_Preprocessing.ipynb   # 데이터 구조 확인, 전처리, 기초 탐색
 │   ├── 02_Deep_Dive.ipynb           # 가격 인상 전후 비교, 코호트 분석
@@ -61,5 +62,4 @@ project-icecream-sales-forecasting/
 ├── requirements.txt
 └── README.md
 ```
-- 데이터: 결제자를 식별할 수 있는 `카드번호`와 `승인번호`는 같은 값끼리 같은 가명으로 바꿔 `01_Data/anonymized/`에 넣었다. 영수증 묶음, 방문 횟수 같은 집계는 원본과 같게 나온다. 자세한 내용은 해당 폴더의 README에 있다.
-- 재현: 노트북은 `../01_Data/raw/`를 읽는다. `01_Data/anonymized/`의 파일을 `01_Data/raw/`로 복사한 뒤 실행하면 된다 (`raw/`는 `.gitignore`에 있다).
+- 데이터: 직접 수집한 매장 POS 데이터를 가공 없이 `01_Data/raw/`에 두었다.
