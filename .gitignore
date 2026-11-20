@@ -1,3 +1,6 @@
 01_Data/raw/
 !01_Data/raw/.gitkeep
 .venv/
+*.csv
+*.xlsx
+.ipynb_checkpoints/
